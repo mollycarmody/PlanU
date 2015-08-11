@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type = "text/css" href = "Webpage Basic - CSS.css" media = "screen"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery-ui-datepicker.min.js"></script>
+<script>
+    $('#calendar').datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+</script>
+</head>
+<body>
+<div id="calendar"></div>
+<div data-role = "page" id = "homepage">
+<p>
+<div style = "text-align: center" id = "logo">
+<img src="Drawing (1).png" alt="PlanU" style="width:70%;height:100%;">
+</div>
+
+<div style = "text-align: center" id = "buttons">
+<button align = "middle"> <a href="http://www.w3schools.com">Login</a></button>
+<button> New User </button>
+</div>
+</p>
+</div>
+
+</body>
+</html>
