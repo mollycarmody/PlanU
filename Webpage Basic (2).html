@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<!--HOMEPAGE CODE-->
+<!--the head-->
+<head>
+<!--this is the link that connects to the css page to decorate the webiste-->
+<link rel="stylesheet" type = "text/css" href = "Webpage Basic - CSS.css"/>
+
+
+</head>
+
+<!--the body -->
+<!--the logo -->
+<body>
+<div data-role = "page" id = "homepage">
+
+<p>
+<div style = "text-align: center" id = "logo">
+<a href="file:///C:/Users/CodeGirl/Desktop/Webpage%20Basic.html"> <img src="Drawing (1).png"> </a>
+</div>
+
+<!--displays general calendar on website-->
+<div id="calendar">
+<iframe id = "cal" src="https://www.google.com/calendar/embed?src=thebendkrew%40gmail.com&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!--change calendar functiond-->
+<script>
+
+function NotreDame(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=hof84klarrac1hdr81emno0i0k%40group.calendar.google.com&ctz=America/Chicago";
+}
+
+function Dartmouth(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=9vnuhsou34mlm4oo3ar3lt6fr4%40group.calendar.google.com&ctz=America/Chicago";
+}
+function Harvard (){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=iemb3esnnenamrc1pvo4tkir4g%40group.calendar.google.com&ctz=America/Chicago";
+}
+function Duke(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=iu0kd7rr60el2jtqoftqks1bhc%40group.calendar.google.com&ctz=America/Chicago";
+}
+function SaintMarysCollege(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=s5pq6d6t0g0depldmmlkbaaqn0%40group.calendar.google.com&ctz=America/Chicago" ;
+}
+
+function UniversityofChicago(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=20sv35utp1jnvh2pumkepedbog%40group.calendar.google.com&ctz=America/Chicago";
+}
+function UniversityofMichigan(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=92mf3ffbh9jau9os6tbdjfg1ao%40group.calendar.google.com&ctz=America/Chicago";
+}
+
+function MarquetteUniversity(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=drujtbufc7ukfrcpq8436cf14o%40group.calendar.google.com&ctz=America/Chicago";
+}
+
+function ACT(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=4j6ma3t0frs7nkuct2m1piug4g%40group.calendar.google.com&ctz=America/Chicago";
+}
+
+function SAT(){
+	document.getElementById("cal").src="https://www.google.com/calendar/embed?src=89ps6moskclg5la0uo1bauqvks%40group.calendar.google.com&ctz=America/Chicago";
+}
+</script>
+
+
+
+<!--FILTER-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!--filter search function-->
+<script>
+function filtering(){ 
+	searchValue = document.getElementById('filter').value; 
+	window.alert(searchValue);
+	$(document).ready(function(){
+	    $("button").not("."+ searchValue).hide()
+	});
+}
+</script>
+
+<!--search bar-->
+<label for="filter">Filter<button onclick="filtering()"> search </button> </label>
+<input type="text" name="filter" value="" id="filter" />
+
+
+
+
+
+<!--school buttons below logo-->
+<div style = "text-align: left" id = "schoolbuttons">
+<ol>   
+	<li><button onclick="NotreDame()" class ="University of Notre Dame"> University of Notre Dame </button></li>
+	<li><button onclick="Dartmouth()" class = "Dartmouth"> Dartmouth </button><li>
+	<li><button onclick="Duke()" class = "Duke"> Duke </button><li>
+	<li><button onclick="UniversityofMichigan()" class = "UniversityofMichigan"> University of Michigan </button></li>
+	<li><button onclick="MarquetteUniversity()" class = "Marquette University"> Marquette University </button><li>
+	<li><button onclick="UniversityofChicago()" class ="University of Chicago"> University of Chicago </button><li>
+	<li><button onclick="Harvard()" class = "Harvard"> Harvard </button><li>
+	<li><button onclick="SaintMarysCollege()" class = "Saint Mary's College"> Saint Mary's College </button><li>
+	<li><button onclick="ACT()" class= "ACT"> ACT </button><li>
+	<li><button onclick="SAT()" class= "SAT"> SAT </button><li>
+</ol>
+</div>
+</p>
+
+</div>
+
+
+	
+
+
+</body>
+</html>
